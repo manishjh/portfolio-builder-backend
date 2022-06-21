@@ -18,7 +18,7 @@ async fn hello() -> impl Responder {
     HttpResponse::Ok().body("backend says hello!")
 }
 
-//this is a post request
+//this is a post request from dev branch
 #[post("/echo")]
 async fn echo(req_body: String) -> impl Responder {
     HttpResponse::Ok().body(req_body)
